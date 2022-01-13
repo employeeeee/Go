@@ -284,7 +284,7 @@ func customer(ch chan string) {
 
 func main() {
 	fmt.Println("main start")
-	ch := make(chan string, 3)
+	ch := make(chan string, 4)
 	go producer(ch)
 	go customer(ch)
 
